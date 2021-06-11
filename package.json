@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
     "start-server": "pm2 start index.js --name nodejs-bff",
-    "stop-server": "pm2 stop nodejs-bff"
+    "stop-server": "pm2 stop nodejs-bff",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
@@ -20,5 +21,13 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7",
     "pm2": "^5.1.0"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

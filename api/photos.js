@@ -5,5 +5,5 @@ const getPhotos = () => {
 };
 
 module.exports = {
-    getPhotos,
+  getPhotos,
 };
