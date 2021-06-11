@@ -20,5 +20,8 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.7",
     "pm2": "^5.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.3.1"
   }
 }
