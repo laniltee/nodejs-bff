@@ -1,6 +1,6 @@
-const express = require("express");
-const { users } = require("../api");
-const { formatUsersResponse } = require("../utils/usersUtils");
+import express from "express";
+import { users } from "../api";
+import formatUsersResponse from "../utils/usersUtils";
 
 const router = express.Router();
 

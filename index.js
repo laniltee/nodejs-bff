@@ -1,8 +1,11 @@
 // Dependancies
-const express = require("express");
-require("dotenv").config();
-const cors = require("cors");
-const morgan = require("morgan");
+import express from "express";
+import dotenv from "dotenv";
+import cors from "cors";
+import morgan from "morgan";
+
+// Configuration
+dotenv.config();
 
 // Express
 const app = express();
@@ -12,7 +15,7 @@ app.use(cors());
 app.use(morgan("combined"));
 
 // Routes
-const routes = require("./routes");
+import routes from "routes";
 app.use("/api", routes);
 
 // App Startup

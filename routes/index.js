@@ -1,11 +1,11 @@
-const express = require("express");
+import express from "express";
 
 const router = express.Router();
 
-const users = require("./users");
-const photos = require("./photos");
+import users from "./users";
+import photos from "./photos";
 
 router.use("/users", users);
 router.use("/photos", photos);
 
-module.exports = router;
+export default router;

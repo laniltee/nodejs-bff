@@ -1,5 +1,5 @@
-const express = require("express");
-const { photos } = require("../api");
+import express from "express";
+import { photos } from "../api";
 
 const router = express.Router();
 
