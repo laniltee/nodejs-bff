@@ -1,11 +1,11 @@
-import express from "express";
+import express from 'express';
 
 const router = express.Router();
 
-import users from "./users";
-import photos from "./photos";
+import users from './users';
+import photos from './photos';
 
-router.use("/users", users);
-router.use("/photos", photos);
+router.use('/users', users);
+router.use('/photos', photos);
 
 export default router;
