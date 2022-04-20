@@ -1,7 +1,4 @@
-const photos = require("../api/photos");
-const users = require("../api/users");
+import * as photos from './photos';
+import * as users from './users';
 
-module.exports = {
-  photos,
-  users,
-};
+export { photos, users };

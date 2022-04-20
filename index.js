@@ -1,21 +1,6 @@
-// Dependancies
-const express = require("express");
-require("dotenv").config();
-const cors = require("cors");
-const morgan = require("morgan");
+require = require('esm')(module /*, options*/);
 
-// Express
-const app = express();
+// Configuration
+require('dotenv').config();
 
-// Middleware
-app.use(cors());
-app.use(morgan("combined"));
-
-// Routes
-const routes = require("./routes");
-app.use("/api", routes);
-
-// App Startup
-app.listen(process.env.PORT, () => {
-  console.info(`BFF running on port ${process.env.PORT}`);
-});
+module.exports = require('./app.js');

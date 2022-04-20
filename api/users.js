@@ -1,9 +1,5 @@
-const apiRequest = require("../lib/apiRequest");
+import apiRequest from "../lib/apiRequest.js";
 
-const getUsers = () => {
+export const getUsers = () => {
   return apiRequest.get("/users");
-};
-
-module.exports = {
-  getUsers,
 };
